@@ -15,6 +15,8 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+
     }
 
     buildTypes {
@@ -39,9 +41,11 @@ dependencies {
     implementation("androidx.camera:camera-camera2:1.3.1")
     implementation ("androidx.camera:camera-lifecycle:1.3.1")
     implementation ("androidx.camera:camera-view:1.3.1")
+    implementation(files("libs/inference_engine_java_api.jar"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
+    implementation("androidx.exifinterface:exifinterface:1.3.6")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
